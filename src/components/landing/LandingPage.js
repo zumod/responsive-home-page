@@ -22,15 +22,15 @@ const LandingPage = () => {
     }
   }, [])
 
-  const submit = () => {
+  const submit = async () => {
     let data = {...form}
     console.log('form success', data)
-    alert('Form Submitted Succesfully')
-    setForm({
+    await setForm({
       name: '',
       number: '',
       city: '',
     })
+    alert('Form Submitted Succesfully')
   }
   
   return (
