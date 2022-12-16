@@ -18,11 +18,6 @@ const LandingPage = () => {
     console.log('Home mounted')
     //Cleanup function
     return () => {
-      setForm({
-        name: '',
-        number: '',
-        city: '',
-      })
       console.log('Home unmounted')
     }
   }, [])
@@ -31,6 +26,11 @@ const LandingPage = () => {
     let data = {...form}
     console.log('form success', data)
     alert('Form Submitted Succesfully')
+    setForm({
+      name: '',
+      number: '',
+      city: '',
+    })
   }
   
   return (
@@ -83,15 +83,15 @@ const LandingPage = () => {
                   <div class="card-body">
                     <h4>Personal Details</h4>
                     <div class="did-floating-label-content mt-4">
-                      <input onChange={e=>setForm({...form, name: e.target.value})} class="did-floating-input" type="text" placeholder=" " />
+                      <input value={form?.name} onChange={e=>setForm({...form, name: e.target.value})} class="did-floating-input" type="text" placeholder=" " />
                       <label class="did-floating-label">Name</label>
                     </div>
                     <div class="did-floating-label-content mt-4">
-                      <input onChange={e=>setForm({...form, number: e.target.value})} class="did-floating-input" type="text" placeholder=" " />
+                      <input value={form?.number} onChange={e=>setForm({...form, number: e.target.value})} class="did-floating-input" type="text" placeholder=" " />
                       <label class="did-floating-label">Mobile number</label>
                     </div>
                     <div class="did-floating-label-content mt-4">
-                      <select onChange={e=>setForm({...form, city: e.target.value})} class="did-floating-select">
+                      <select value={form?.city} onChange={e=>setForm({...form, city: e.target.value})} class="did-floating-select">
                         <option value=""></option>
                         <option value="Alabama">Alabama</option>
                         <option value="Boston">Boston</option>
