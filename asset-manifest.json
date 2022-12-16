@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/responsive-home-page/static/css/main.a4951cbf.css",
-    "main.js": "/responsive-home-page/static/js/main.9d8a0549.js",
+    "main.js": "/responsive-home-page/static/js/main.586de48b.js",
     "static/media/blueActiva.png": "/responsive-home-page/static/media/blueActiva.1775d73a91e15a612ce3.png",
     "static/media/logo.svg": "/responsive-home-page/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/responsive-home-page/index.html",
     "main.a4951cbf.css.map": "/responsive-home-page/static/css/main.a4951cbf.css.map",
-    "main.9d8a0549.js.map": "/responsive-home-page/static/js/main.9d8a0549.js.map"
+    "main.586de48b.js.map": "/responsive-home-page/static/js/main.586de48b.js.map"
   },
   "entrypoints": [
     "static/css/main.a4951cbf.css",
-    "static/js/main.9d8a0549.js"
+    "static/js/main.586de48b.js"
   ]
 }
