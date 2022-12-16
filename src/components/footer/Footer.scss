@@ -1,0 +1,24 @@
+ // Colors variable
+ 
+ $lightGrey:#C0C5CC;
+ $whiteColor: white;
+ $grey: #F2F3F4;
+ $black: #020E1D;
+ $fullgrey: #414A55;
+ $danger: #B31029;
+
+//Footer styles
+footer {
+    background-color: #61227a;
+
+    h6 {
+        font-size: 18px;
+        color: $whiteColor;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 16px;
+        color: $whiteColor;
+    }
+}

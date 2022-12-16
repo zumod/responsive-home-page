@@ -1,0 +1,245 @@
+ // Colors variable
+ $lightGrey:#C0C5CC;
+ $whiteColor: white;
+ $grey: #F2F3F4;
+ $black: #020E1D;
+ $fullgrey: #414A55;
+ $danger: #B31029;
+
+
+ //  landing-page-sec start
+ .landing-page-sec {
+
+     // header-sec start
+     .header-sec {
+         background: linear-gradient(167deg, #62227b 66.5%, white 67%);
+         //  background: linear-gradient(174deg, rgba(98, 34, 123, 1) 63.5%, rgba(255, 255, 255, 1) 64%);
+         //  background-image: url(../assets/images/3.png);
+         height: 675px;
+         text-align: left;
+
+         h1 {
+             font-size: 18px;
+             color: $whiteColor;
+         }
+
+         h2 {
+             font-size: 16px;
+             color: $whiteColor;
+             text-align: justify;
+         }
+
+         .what-we-offer {
+             border: 1px dashed $whiteColor;
+             border-radius: 10px;
+             padding: 0px 15px 15px 15px;
+             width: 50%;
+
+             h3 {
+                 font-size: 14px;
+                 color: $danger;
+                 background-color: $whiteColor;
+                 width: 50%;
+                 margin-top: -13px;
+                 padding: 5px;
+                 text-transform: uppercase;
+                 text-align: center;
+             }
+
+             .form-check-label {
+                 color: $whiteColor;
+             }
+         }
+
+         .card {
+             border-radius: 10px;
+             padding: 20px;
+             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+             h4 {
+                 font-size: 16px;
+                 color: $black;
+             }
+
+             .did-floating-label-content {
+                 position: relative;
+                 margin-bottom: 20px;
+
+
+                 .did-floating-label {
+                     color: #1e4c82;
+                     font-size: 13px;
+                     font-weight: normal;
+                     position: absolute;
+                     pointer-events: none;
+                     left: 15px;
+                     top: 7px;
+                     padding: 0 5px;
+                     background: #fff;
+                     transition: 0.2s ease all;
+                     -moz-transition: 0.2s ease all;
+                     -webkit-transition: 0.2s ease all;
+                 }
+
+                 .did-floating-input,
+                 .did-floating-select {
+                     font-size: 12px;
+                     display: block;
+                     width: 100%;
+                     height: 36px;
+                     padding: 0 20px;
+                     background: #fff;
+                     color: #323840;
+                     border: 1px solid $lightGrey;
+                     border-radius: 4px;
+                     box-sizing: border-box;
+
+                     &:focus {
+                         outline: none;
+
+                         ~.did-floating-label {
+                             top: -8px;
+                             font-size: 13px;
+                         }
+                     }
+                 }
+
+                 .did-floating-select {
+                     -webkit-appearance: none;
+                     -moz-appearance: none;
+                     appearance: none;
+                 }
+
+                 .did-floating-select::-ms-expand {
+                     display: none;
+                 }
+
+                 .did-floating-input:not(:placeholder-shown)~.did-floating-label {
+                     top: -8px;
+                     font-size: 13px;
+                 }
+
+                 .did-floating-select:not([value=""]):valid~.did-floating-label {
+                     top: -8px;
+                     font-size: 13px;
+                 }
+
+                 .did-floating-select[value=""]:focus~.did-floating-label {
+                     top: 11px;
+                     font-size: 13px;
+                 }
+
+                 .did-floating-select:not([multiple]):not([size]) {
+                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6' viewBox='0 0 8 6'%3E%3Cpath id='Path_1' data-name='Path 1' d='M371,294l4,6,4-6Z' transform='translate(-371 -294)' fill='%23003d71'/%3E%3C/svg%3E%0A");
+                     background-position: right 15px top 50%;
+                     background-repeat: no-repeat;
+                 }
+             }
+
+             .btn {
+                 background-color: #da2218;
+                 font-size: 14px;
+                 color: $whiteColor;
+                 text-transform: uppercase;
+                 width: 100%;
+                 border-radius: 2px;
+             }
+         }
+     }
+
+     // header-sec end
+     //  product-details-sec start
+     .product-details-sec {
+         text-align: left;
+
+         h5 {
+             font-size: 18px;
+             color: $fullgrey;
+             font-weight: 600;
+             text-align: justify;
+         }
+
+         p {
+             font-size: 16px;
+             color: $fullgrey;
+             text-align: justify;
+         }
+
+         img {
+             height: auto;
+             width: 100%;
+             object-fit: contain;
+         }
+     }
+
+     //  product-details-sec end
+     //  product-decription-sec start
+     .product-decription-sec {
+         background-color: #f4f7fd;
+         text-align: center;
+
+         h6 {
+             font-size: 18px;
+             color: $fullgrey;
+             font-weight: 600;
+         }
+
+         p {
+             font-size: 16px;
+             color: $fullgrey;
+             text-align: justify;
+         }
+
+         .d-flex {
+             align-items: baseline;
+             justify-content: center;
+
+             .circle {
+                 width: 50px;
+                 height: 50px;
+                 line-height: 47px;
+                 border-radius: 50%;
+                 /* the magic */
+                 -moz-border-radius: 50%;
+                 -webkit-border-radius: 50%;
+                 text-align: center;
+                 color: $fullgrey;
+                 font-size: 18px;
+                 text-transform: uppercase;
+                 font-weight: 700;
+                 background-color: $whiteColor;
+                 box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+             }
+
+             p {
+                 font-size: 18px;
+                 color: $fullgrey;
+                 font-weight: 600;
+             }
+         }
+     }
+
+     //  product-decription-sec end
+ }
+
+ //  landing-page-sec end 
+
+ // media query starts
+ @media screen and (min-width:320px) and (max-width:767px) {
+     .header-sec {
+         height: 950px !important;
+     }
+
+     .what-we-offer {
+         width: 100% !important;
+         margin-bottom: 25px;
+     }
+ }
+
+ @media screen and (min-width:768px) and (max-width:991px) {
+     .what-we-offer {
+         width: 100% !important;
+     }
+ }
+
+  // media query ends
